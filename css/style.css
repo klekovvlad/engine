@@ -701,6 +701,9 @@ h3 {
   .questions__form h4 {
     font-size: 1.5em;
   }
+  .questions__form input {
+    min-width: 100%;
+  }
   .questions__form button.main-btn {
     min-width: 100%;
   }
