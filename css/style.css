@@ -753,4 +753,8 @@ h3 {
   .popup__body h3 {
     font-size: 1.5em;
   }
+  .popup__body button.main-btn,
+  .popup__body input {
+    min-width: 100%;
+  }
 }
