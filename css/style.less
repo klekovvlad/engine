@@ -97,7 +97,7 @@ h3 {
 }
 
 .main {
-    background: url(../img/mainbg.jpg) no-repeat center bottom;
+    background: url(../img/mainbg.webp) no-repeat center bottom;
     background-size: cover;
     min-height: 700px;
     &__wrapper {
@@ -292,7 +292,7 @@ h3 {
 }
 
 .price {
-    background: #d3d3d3 url(../img/pricebg.png) no-repeat 95% bottom;
+    background: #d3d3d3 url(../img/pricebg.webp) no-repeat 95% bottom;
     background-size: 500px;
     position: relative;
     padding-top: 80px;
@@ -407,9 +407,6 @@ h3 {
         }
     }
     &__form {
-        form {
-            max-width: 400px;
-        }
         h4 {
             font-size: 2em;
             color: #fff;
@@ -422,6 +419,9 @@ h3 {
         }
         input {
             margin-bottom: 30px;
+        }
+        button.main-btn {
+            min-width: 300px;
         }
     }
 }
@@ -529,6 +529,18 @@ h3 {
     }
 }
 
+.form__message {
+    display: none;
+}
+
+.close {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
 .popup__show {
     opacity: 1;
     visibility: visible;
@@ -570,7 +582,7 @@ h3 {
         }
     }
     .price {
-        background: #d3d3d3 url(../img/pricebg.png) no-repeat 95% 80%;
+        background: #d3d3d3 url(../img/pricebg.webp) no-repeat 95% 80%;
         background-size: 300px;
         &__content {
             max-width: 60%;
@@ -637,7 +649,7 @@ h3 {
     }
     
     .main {
-        background: url(../img/mainbg.jpg) no-repeat right bottom;
+        background: url(../img/mainbg.webp) no-repeat right bottom;
         &__wrapper {
             padding: 0px 15px;
             grid-template-columns: 1fr;
@@ -760,10 +772,7 @@ h3 {
             display: none;
         }
         &__form {
-            form {
-                max-width: none;
-                padding: 40px;
-            }
+            padding: 40px;
             h4 {
                 font-size: 1.5em;
             }
@@ -810,6 +819,7 @@ h3 {
     }
     .popup {
         &__body {
+            min-width: 90%;
             max-width: 90%;
             padding: 40px;
             h3 {

@@ -16,7 +16,7 @@
         <div class="container">
             <header class="header">
                 <div class="header__logo">
-                    <img src="img/logo.svg" alt="Ипортные автозапчасти">
+                    <img loading="lazy" src="img/logo.svg" alt="Ипортные автозапчасти">
                 </div>
                 <div class="header__phone">
                     <a href="tel:">+7 (999) 999 99 99</a>
@@ -29,13 +29,6 @@
                     <h2 class="wow fadeInLeft">Выгода до 40%</h2>
                     <button class="main-btn popup__open">Узнать цену</button>
                 </div>
-                <!-- <div class="main__form">
-                    <form action="">
-                        <h3>Узнать цену</h3>
-                        <input type="tel" placeholder="Введите номер телефона">
-                        <button type="submint" class="main-btn">Отправить</button>
-                    </form>
-                </div> -->
             </div>
         </div>
     </main>
@@ -44,7 +37,7 @@
         <div class="container">
             <div class="advantage__wrapper">
                 <div class="advantage__wheel">
-                    <img class="wow fadeInRightBig" src="img/circle.png" alt="">
+                    <img loading="lazy" class="wow fadeInRightBig" src="img/circle.webp" alt="">
                 </div>
                 <div class="advantage__content">
                     <h3><span class="red">П</span>очему стоит выбирать нас?</h3>
@@ -79,7 +72,7 @@
         <div class="container">
             <div class="work__wrapper">
                 <div class="work__image">
-                    <img src="img/work.png" alt="">
+                    <img loading="lazy" loading="lazy" src="img/work.webp" alt="">
                 </div>
                 <div class="work__content">
                     <h3><span class="red">К</span>ак мы работаем?</h3>
@@ -155,15 +148,13 @@
         <div class="container">
             <div class="questions__wrapper">
                 <div class="questions__img">
-                    <img class="wow fadeIn" src="img/car.png" alt="">
+                    <img loading="lazy" class="wow fadeIn" src="img/car.webp" alt="">
                 </div>
                 <div class="questions__form">
-                    <form action="">    
-                        <h4>Остались вопросы?</h4>
-                        <h5>Получите бесплатную консультацию</h5>
-                        <input type="tel" placeholder="Введите номер телефона">
-                        <button type="submint" class="main-btn">Отправить</button>
-                    </form>
+                    <h4>Остались вопросы?</h4>
+                    <h5>Получите бесплатную консультацию</h5>
+
+                    <button class="main-btn popup__open">Отправить</button>
                 </div>
             </div>
         </div>
@@ -191,12 +182,21 @@
     <div class="popup">
         <div class="popup__body">
             <div class="popup__close"><span></span><span></span></div>
-            <h3>Узнать цену</h3>
-            <h4>Наш менеджер расскажет о стомости, сроках доставки и вашей <span>персональной скидке</span></h4>
-            <form action="">
-                <input type="tel" placeholder="Ваш номер телефона">
-                <button class="main-btn">Отправить</button>
-            </form>
+            <div class="form__body">
+                <h3>Узнать цену</h3>
+                <h4>Наш менеджер расскажет о стомости, сроках доставки и вашей <span>персональной скидке</span></h4>
+                <form action="">
+                    <input type="tel" name="Телефон" class="tel" placeholder="Ваш номер телефона" required>
+                    <input type="hidden" name="project_name" value="SiteName">
+                    <input type="hidden" name="admin_email"  value="yourMail">
+                    <input type="hidden" name="form_subject" value="Форма с подвала сайта SiteName">
+                    <button class="main-btn">Отправить</button>
+                </form>
+            </div>
+            <div class="form__message">
+                <h3>Спасибо!</h3>
+                <h4>Наш менеджер свяжется с Вами в ближайшее время</h4>
+            </div>
         </div>
     </div>
 
